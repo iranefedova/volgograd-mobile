@@ -1,5 +1,6 @@
 body{
     font-family: 'proxima', sans-serif;
+    background-color: #e8e8e8;
 }
 
 #container {
@@ -16,9 +17,17 @@ a.link {
     color: #007dd5;
 }
 
+h2 {
+    font-size: 26px;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'proxima', sans-serif;
+}
+
+.upper {
+    text-transform: uppercase;
 }
 
 .logo{
@@ -172,8 +181,11 @@ ul.root-item{
 }
 
 .search-form{
-    padding: 25px;
-    background: #f4f5f6;
+/*    padding: 25px;*/
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .search-form input{
@@ -192,9 +204,14 @@ ul.root-item{
     text-align: right;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .welcome {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-image: url(../images/map_back.png);
 }
 
 .photo-block {
@@ -215,4 +232,65 @@ ul.root-item{
 
 .text-block p {
     margin-bottom: 10px;
+}
+
+ul.second-menu {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.second-menu > li > a {
+    color: #323232 !important;
+    text-decoration: none;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+ul.second-menu > li > img {
+    display: inline;
+    vertical-align: middle;
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+ul.second-menu > li {
+    background-image: url('../images/map_back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position: center;
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 70px;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
+
+ul.second-menu > li:nth-child(2n + 1) {
+    margin-right: 10px;
+    border-left-color: #206db1;
+}
+
+.main-button {
+    margin-bottom: 15px;
+}
+
+.main-button {
+    display: inline-block;
+    margin-right: 10px;
+    width: calc(33% - 10px);
+    height: 80px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 4%;
+    background-color: #1c69ab;
+}
+
+.main-button:last-child {
+    margin-right: 0;
 }
