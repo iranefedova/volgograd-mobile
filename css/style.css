@@ -1,12 +1,12 @@
 body{
     font-family: 'proxima', sans-serif;
-    background-color: #e8e8e8;
 }
 
 #container {
     width: 640px;
     margin: 0 auto;
     position: relative;
+    background-color: #e8e8e8;
 }
 
 a{
@@ -19,6 +19,12 @@ a.link {
 
 h2 {
     font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 *{
@@ -181,7 +187,6 @@ ul.root-item{
 }
 
 .search-form{
-/*    padding: 25px;*/
     padding-bottom: 25px;
     padding-top: 25px;
     padding-left: 15px;
@@ -237,19 +242,22 @@ ul.root-item{
 ul.second-menu {
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 15px;
 }
 
 ul.second-menu > li > a {
     color: #323232 !important;
     text-decoration: none;
     vertical-align: middle;
-    overflow: hidden;
+    display: inline-block;
+    width: 190px;
 }
 
 ul.second-menu > li > img {
     display: inline;
     vertical-align: middle;
     max-width: 50px;
+    max-height: 45px;
     margin-right: 10px;
 }
 
@@ -261,12 +269,13 @@ ul.second-menu > li {
     padding-top: 15px;
     padding-bottom: 15px;
     background-position: center;
-    width: calc(50% - 10px);
+    width: 48%;
     display: inline-block;
     margin-bottom: 10px;
     height: 70px;
     border-left-style: solid;
     border-left-width: 3px;
+    vertical-align: top;
 }
 
 ul.second-menu > li:nth-child(2n + 1) {
@@ -274,23 +283,274 @@ ul.second-menu > li:nth-child(2n + 1) {
     border-left-color: #206db1;
 }
 
-.main-button {
-    margin-bottom: 15px;
+ul.second-menu > li:nth-child(2n) {
+    border-left-color: #70c7fe;
 }
 
 .main-button {
-    display: inline-block;
-    margin-right: 10px;
-    width: calc(33% - 10px);
+    margin-bottom: 25px;
+}
+
+.main-button {
+    display: inline-table;
+    margin-right: 9px;
+    width: 32%;
     height: 80px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
     text-align: center;
-    padding-top: 4%;
     background-color: #1c69ab;
+    vertical-align: top;
 }
 
 .main-button:last-child {
     margin-right: 0;
+}
+
+.main-button > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
+    width: 100%;
+}
+
+.jqselect{
+    display: block;
+    width: 100%;
+}
+
+
+.jq-selectbox__select{
+    background: #fff !important;
+    border-radius: 0;
+    box-shadow: none;
+    height: 60px;
+    border: 2px solid #dadfe6;
+    padding-left: 10px;
+    padding-right: 60px;
+    margin-bottom: 30px;
+}
+
+.jq-selectbox__select-text{
+    height: 56px;
+    line-height: 56px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.jq-selectbox__trigger{
+    border: 0;
+    width: 60px;
+    background: #f6bd68;
+}
+
+
+.jq-selectbox .jq-selectbox__trigger-arrow{
+    top: 50%;
+    left: 50%;
+    margin: -3px  0 0 -5px;
+    border-top-color: #fff;
+}
+
+.jq-selectbox__dropdown{
+    border-radius: 0;
+}
+
+.jq-selectbox li{
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.item {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.white-block {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.gerb-block {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gerb-block span {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.circle {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.2);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 55%;
+}
+
+.circle > img {
+    max-width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.grey-text {
+    color: #919090;
+}
+
+.blue-text {
+    color: #037cd3;
+}
+
+.map-item {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+
+.map-item:nth-child(2n+1) {
+    margin-right: 20px;
+}
+
+.square {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    background-color: #f6bd68;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.map-item-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.map-item-text p {
+    margin-top: 7px;
+    font-size: 18px;
+}
+
+.btn-yellow {
+    display: inline-block;
+    background-color: #f6bd68;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+.region-info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.region-info > .white-block {
+    width: 32%;
+    margin-right: 5px;
+    padding: 15px;
+    display: inline-block;
+    height: 180px;
+    vertical-align: top;
+}
+
+.region-info > .white-block:last-child {
+    margin-right: 0;
+}
+
+.region-info h3 {
+    height: 50px
+}
+
+.region-info p {
+    margin-bottom: 4px;
+}
+
+.region-info strong {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+.blue-block {
+    display: inline-table;
+    margin-right: 9px;
+    width: 49%;
+    height: 120px;
+    text-align: center;
+    vertical-align: top;
+    background-position: center center;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.blue-block:nth-child(2n) {
+    margin-right: 0;
+}
+
+.blue-block > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
+    width: 100%;
+}
+
+.footer {
+    padding: 50px;
+    color: #ffffff;
+    background-color: #2d3b47;
+}
+
+.footer .copy {
+    position: relative;
+    font-size: 17px;
+    line-height: 28px;
+    padding-left: 105px;
+    margin-bottom: 45px;
+}
+
+.footer .copy .img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.footer > p {
+    margin-bottom: 10px;
+}
+
+.social a {
+    margin-right: 5px;
+}
+
+.social {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-map {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
 }

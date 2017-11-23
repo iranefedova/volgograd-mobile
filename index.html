@@ -9,7 +9,12 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css"/>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.formstyler.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -269,20 +274,166 @@
                     <img src="./images/coins.png">
                     <a href="#" class="upper">о бюджете</a>
                 </li>
+                <li>
+                    <img src="./images/bag.png">
+                    <a href="#" class="upper">бюджет для граждан</a>
+                </li>
+                <li>
+                    <img src="./images/gosprogs.png">
+                    <a href="#" class="upper">госпрограммы</a>
+                </li>
+                <li>
+                    <img src="./images/lines.png">
+                    <a href="#" class="upper">исполнение бюджета</a>
+                </li>
+                <li>
+                    <img src="./images/laws.png">
+                    <a href="#" class="upper">законы о бюджете</a>
+                </li>
                  <li>
                     <img src="./images/presentation.png">
-                    <a href="#">приоритетные направления рф</a>
+                    <a href="#" class="upper">приоритетные направления рф</a>
                 </li>
             </ul>
         </div>
         
         <div class="main-buttons">
-            <a href="#" class="upper main-button" style="background-image: url('./images/index2.png');">бюджетный калькулятор</a>
-            <a href="#" class="upper main-button" >пройти опрос</a>
+           <div class="main-button" style="background-image: url('./images/index2.png');">
+               <a href="#" class="upper">бюджетный калькулятор</a>
+           </div>
+            <div class="main-button">
+               <a href="#" class="upper">пройти опрос</a>
+           </div>
+           <div class="main-button" style="background-image: url('./images/index.png');">
+               <a href="#" class="upper">форум</a>
+           </div>
         </div>
         
         <h2 class="text-center">Бюджетная карта</h2>
         
+        <div class="item">
+             <select>
+                 <option value="Уровень бюджета">Выбор района</option>
+             </select>
+        </div>
+        
+        <div class="white-block">
+            <div class="item">
+                <div class="gerb-block">
+                    <div class="circle" style="background-image: url('./images/staropolt.jpg');"></div>
+                    <span>Старополтавский район</span>
+                </div>
+                <div class="map-items">
+                    <div class="map-item">
+                        <div class="square" style="background-image: url('./images/location.png');"></div>
+                        <div class="map-item-text">
+                            <p class="grey-text">Административный центр</p>
+                            <p>с. Старая Полтавка</p>
+                        </div>
+                    </div>
+                    <div class="map-item">
+                        <div class="square" style="background-image: url('./images/area.png');"></div>
+                        <div class="map-item-text">
+                            <p class="grey-text">Площадь территории</p>
+                            <p>200 км2</p>
+                        </div>
+                    </div>
+                    <div class="map-item">
+                        <div class="square" style="background-image: url('./images/population.png');"></div>
+                        <div class="map-item-text">
+                            <p class="grey-text">Численность населения</p>
+                            <p>18 923 чел.</p>
+                        </div>
+                    </div>
+                    <div class="map-item">
+                        <a href="#" class="btn-yellow">Перейти в раздел</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="region-info">
+            <div class="white-block">
+                <h3 class="text-center">Доходы</h3>
+                <p>План</p>
+                <strong class="grey-text">20 882 417 000 руб.</strong>
+                <p>Исполнено</p>
+                <strong class="blue-text">19 797 866 000 руб.</strong>
+            </div>
+            <div class="white-block">
+                <h3 class="text-center">Расходы</h3>
+                <p>План</p>
+                <strong class="grey-text">20 882 417 000 руб.</strong>
+                <p>Исполнено</p>
+                <strong class="blue-text">19 797 866 000 руб.</strong>
+            </div>
+            <div class="white-block">
+                <h3 class="text-center">Дефицит/профицит</h3>
+                <p>План</p>
+                <strong class="grey-text">20 882 417 000 руб.</strong>
+                <p>Исполнено</p>
+                <strong class="blue-text">19 797 866 000 руб.</strong>
+            </div>
+        </div>
+        
+        <div class="news">
+            <div class="white-block">
+                
+            </div>
+        </div>
+        
+        <div class="main-directions">
+            <div class="blue-block" style="background-image: linear-gradient(rgba(67, 146, 192, 0.8), rgba(67, 146, 192, 0.7)), url('../images/zdrav.png');">
+                <a href="#" class="upper">здравоохранение</a>
+            </div>
+            <div class="blue-block" style="background-image: linear-gradient(rgba(67, 146, 192, 0.8), rgba(67, 146, 192, 0.7)), url('../images/social.png');">
+                <a href="#" class="upper">социальное обеспечение</a>
+            </div>
+            <div class="blue-block" style="background-image: linear-gradient(rgba(67, 146, 192, 0.8), rgba(67, 146, 192, 0.7)), url('../images/books.png');">
+                <a href="#" class="upper">образование</a>
+            </div>
+            <div class="blue-block" style="background-image: linear-gradient(rgba(67, 146, 192, 0.8), rgba(67, 146, 192, 0.7)), url('../images/culture.png');">
+                <a href="#" class="upper">культура</a>
+            </div>
+        </div>
+        
+        <div class="useful-links">
+            
+        </div>
+        
+        <div class="other-links">
+            
+        </div>
+        
+        <div class="footer">
+           
+            <div class="copy">
+                <a class="img" href="/">
+                    <img src="./images/gerb.png" alt=""/>
+                </a>
+
+                <p>Комитет финансов Волгоградской области</p>
+                <p>400066, Волгоград, ул. Порт-Саида, 7</p>
+                <p>телефон: (8442) 30 91 06</p>
+                <p>факс: (8442) 38 58 91</p>
+            </div>
+            
+            <p class="upper">Мы в социальных сетях:</p>
+            <div class="social">
+                <a href="#"><img src="./images/b_vk.png" alt=""/></a>
+                <a href="#"><img src="./images/b_tw.png" alt=""/></a>
+                <a href="#"><img src="./images/b_fb.png" alt=""/></a>
+                <a href="#"><img src="./images/b_ok.png" alt=""/></a>
+                <a href="#"><img src="./images/b_rss.png" alt=""/></a>
+            </div>
+            
+            <a href="#" class="site-map text-right">
+                <img src="./images/sitemap.png" alt=""/>
+            </a>
+
+
+            <div class="clr"></div>
+        </div>
         
     </div>
 </body>
