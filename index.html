@@ -444,14 +444,49 @@
         </div>
         
         <div class="useful-links">
-            
+            <div class="white-block marg-t">
+                <div class="slider useful-slider">
+                    <div class="useful-link slide text-center">
+                        <div class="circle-big" style="background-image: url('./images/dva3.png')"></div>
+                        <p class="upper"><a href="#">Министерство финансов Российской Федерации</a></p>
+                    </div>
+                    <div class="useful-link slide text-center">
+                        <div class="circle-big" style="background-image: url('./images/dva3.png')"></div>
+                        <p class="upper"><a href="#">Министерство финансов Российской Федерации</a></p>
+                    </div>
+                    <div class="useful-link slide text-center">
+                        <div class="circle-big" style="background-image: url('./images/dva3.png')"></div>
+                        <p class="upper"><a href="#">Казначейство Российской Федерации</a></p>
+                    </div>
+                    <div class="useful-link slide text-center">
+                        <div class="circle-big" style="background-image: url('./images/dva3.png')"></div>
+                        <p class="upper"><a href="#">Казначейство Российской Федерации</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <div class="other-links">
-            
+        <div class="other-links marg-t">
+            <div class="slider other-slider">
+                <div class="slide">
+                    <a href="#" class="img-link">
+                        <img src="./images/rek1.png" alt="">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="#" class="img-link">
+                        <img src="./images/rek2.png" alt="">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="#" class="img-link">
+                        <img src="./images/rek3.png" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
         
-        <div class="footer">
+        <div class="footer marg-t">
             <div class="copy">
                 <a class="img" href="/">
                     <img src="./images/gerb.png" alt=""/>
@@ -489,7 +524,23 @@
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 mobileFirst: true
-            });
+    });
+        
+    $(".useful-slider").slick({
+                centerPadding: "10px",
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                mobileFirst: true
+    });
+        
+    $(".other-slider").slick({
+                centerPadding: "10px",
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                mobileFirst: true
+    });
     </script>
     
     
