@@ -16,7 +16,7 @@ $(function(){
         $(this).next().slideToggle(300);
     });
 
-    $('.content h2').on('click',function(){
+    $('.toggle-item').on('click',function(){
         $(this).next().slideToggle(300);
     });
 
