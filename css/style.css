@@ -790,3 +790,28 @@ ul.second-menu > li:nth-child(2n) {
 .graphic-list li:nth-child(3):before {
     background-color: #037cd3;
 }
+
+.graphic-list h6 {
+    cursor: pointer;
+}
+
+.document-block > .doc-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.document-block > .doc-icon > img {
+    width: 60px;
+}
+
+
+
+.document-block > .doc-description {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.document-block > .doc-description > p {
+    font-size: 14px;
+    margin-top: 4px;
+}
