@@ -362,7 +362,7 @@ ul.second-menu > li:nth-child(2n) {
     border: 2px solid #dadfe6;
     padding-left: 10px;
     padding-right: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .jq-selectbox__select-text{
@@ -804,8 +804,6 @@ ul.second-menu > li:nth-child(2n) {
     width: 60px;
 }
 
-
-
 .document-block > .doc-description {
     display: inline-block;
     vertical-align: top;
@@ -814,4 +812,14 @@ ul.second-menu > li:nth-child(2n) {
 .document-block > .doc-description > p {
     font-size: 14px;
     margin-top: 4px;
+}
+
+.download-btn {
+    background-color: #f6bd68;
+    background-image: url('../images/download.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
 }
