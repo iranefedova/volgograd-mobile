@@ -57,6 +57,18 @@ h6 {
     margin-top: 20px;
 }
 
+.marg-r {
+    margin-right: 15px;
+}
+
+.small-marg-t {
+    margin-top: 8px;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
 .upper {
     text-transform: uppercase;
 }
@@ -607,6 +619,7 @@ ul.second-menu > li:nth-child(2n) {
     box-shadow: 0 2px 5px 2px #d6d6d6;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 60%;
     max-width: 80%;
     max-height: 80%;
     margin-bottom: 8px;
@@ -822,4 +835,9 @@ ul.second-menu > li:nth-child(2n) {
     height: 40px;
     width: 40px;
     border-radius: 10px;
+}
+
+.useful > .inline {
+    max-width: 75%;
+    line-height: 1.3;
 }
