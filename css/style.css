@@ -501,6 +501,19 @@ ul.second-menu > li:nth-child(2n) {
     text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
 }
 
+.btn-yellow-small {
+    display: inline-block;
+    background-color: #f6bd68;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
 .region-info {
     margin-top: 20px;
     margin-bottom: 20px;
