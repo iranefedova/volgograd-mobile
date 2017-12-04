@@ -47,6 +47,14 @@ $(function () {
         $('#costs-1').slideUp(300);
         $('#costs-3').slideDown(300);
     });
+    
+    $('.schedule-button').on('click', function () {
+        $('.schedule-button').removeClass('active');
+        $(this).addClass("active");
+        $('.show-block:visible').slideUp(300);
+        number = this.id;
+        $("#point_" + number).slideDown(300);
+    });
 
     //    $( "#datepicker, .datepicker" ).datepicker( $.datepicker.regional[ "ru" ] );
 

@@ -77,6 +77,10 @@ h6 {
     display: inline-block;
 }
 
+.hidden {
+    display: none;
+}
+
 .logo{
     display: inline-block;
     vertical-align: middle;
@@ -869,4 +873,42 @@ ul.second-menu > li:nth-child(2n) {
 
 .two-photo > .inline {
     width: 48%
+}
+
+.leftBigDigit {
+    font-family: sans-serif;
+    font-size: 40px;
+    text-anchor: end;
+    font-weight: bold;
+    fill: #DADFE6;
+}
+
+.mountthTxt {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-anchor: middle;
+    text-transform: uppercase;
+    fill: gray;
+}
+
+.schedule-button {
+    border: #c5c8cc 1px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.schedule-button.active {
+    background-color: rgb(67, 140, 203);
+    color: #ffffff;
+}
+
+.show-block .grey-text {
+    color: #786c5b;
+    margin-left: 30px;
 }
