@@ -55,6 +55,11 @@ $(function () {
         number = this.id;
         $("#point_" + number).slideDown(300);
     });
+    
+    $('.alfavit li a').on('click', function () {
+        $('.alfavit li a').removeClass('active');
+        $(this).addClass("active");
+    });
 
     //    $( "#datepicker, .datepicker" ).datepicker( $.datepicker.regional[ "ru" ] );
 
