@@ -117,12 +117,11 @@ h6 {
     left: 0;
     top: 0;
 }
-/*
-.row{
-    padding-left: 10px;
-    padding-right:
-}
 
+.row > * {
+    vertical-align: middle;
+}
+/*
 .row > *:nth-child(2n + 1) {
     float: left;
 }
@@ -1079,6 +1078,7 @@ ul.alfavit > li > a.active {
 /*---SWITCH---*/
 
 .switch {
+    display: inline-block;
     overflow: hidden;
     max-width: max-content;
     color: #323232;
@@ -1154,8 +1154,9 @@ ul.alfavit > li > a.active {
 /*---DOWNLOAD BUTTON---*/
 
 .btn-download {
-  	width: 45px;
-  	height: 45px;
+    display: inline-block;
+  	width: 48px;
+  	height: 48px;
     padding-left: 12px;
     padding-right: 12px;
   	background-color: #ffbe62;
