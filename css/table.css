@@ -90,3 +90,84 @@
     width: 86%;
     vertical-align: top;
 }
+
+table.table-control {
+    border-collapse: inherit;
+}
+
+table.table-control tr td {
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+table.table-control tr th:first-child,
+table.table-control tr td:first-child {
+    padding-left: 34px;
+}
+
+.table-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 100%;
+    border-right: 1px solid #a8b3c4;
+}
+
+.table-number span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    height: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+table.table-control tr th:first-child {
+    position: relative;
+}
+
+table.table-control tr td:first-child {
+    box-shadow: none;
+    position: relative;
+    border-right: 1px solid #a8b3c4;
+    border-bottom: 1px solid #a8b3c4;
+}
+
+table.table-control tr td:last-child {
+    width: auto;
+    word-wrap: normal !important;
+    white-space: normal !important;
+}
+
+.page__docs {
+    color: #919599;
+}
+
+.page__docs span {
+    display: block;
+}
+
+table.table-project {
+    border-collapse: inherit;
+}
+
+.table-project tr td:first-child {
+    box-shadow: none;
+}
+
+.table-project tr th {
+    border-right: 1px solid #c2bec3;
+    border-bottom: 1px solid #c2bec3;
+}
+
+.table-project tr td h6 {
+    vertical-align: middle;
+}
+
+.table-project tr td {
+    background: #fff;
+}

@@ -793,6 +793,22 @@ ul.second-menu > li:nth-child(2n) {
     padding: 20px;
 }
 
+.padding-l {
+    padding-left: 20px;
+}
+
+.padding-t {
+    padding-top: 20px;
+}
+
+.padding-r {
+    padding-right: 20px;
+}
+
+.padding-b {
+    padding-bottom: 20px;
+}
+
 .image {
     max-width: 100%;
 }
@@ -938,6 +954,14 @@ ul.second-menu > li:nth-child(2n) {
 .useful > .inline {
     max-width: 75%;
     line-height: 1.3;
+}
+
+.useful .circle-small {
+    background-size: contain;
+}
+
+.useful a {
+    font-size: 21px;
 }
 
 .number-list {
