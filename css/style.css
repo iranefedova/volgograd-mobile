@@ -641,6 +641,35 @@ ul.second-menu > li:nth-child(2n) {
     max-height: 20px;
 }
 
+.news-item .img-link img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}
+
+.news-item p {
+    font-size: 24px;
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+.news-item .header-link {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.news-item .img-link {
+    margin-bottom: 20px;
+    display: block;
+}
+
 .useful-link {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1235,4 +1264,34 @@ ul.alfavit > li > a.active {
 
 .dateform_img_display {
     display: none;
+}
+
+.b-contact__group {
+    margin-bottom: 32px;
+}
+
+.b-contact__group:last-child {
+    margin-bottom: 0;
+}
+
+.b-contact__group p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.b-contact__group h2 {
+    font-size: 21px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.b-contact__group a {
+    text-decoration: none;
+    color: #000;
+}
+
+.b-contact__group a.b-contact__link {
+    color: #007dd5;
+    text-decoration: underline;
 }
