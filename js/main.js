@@ -61,12 +61,76 @@ $(function () {
         $(this).addClass("active");
     });
 
-    //    $( "#datepicker, .datepicker" ).datepicker( $.datepicker.regional[ "ru" ] );
-
-
     $('select').styler();
     
+        $(".label-accordion").on("click", function () {
+        $(this).closest('ul').find('ul:first').slideToggle();
+    });
+
+    $("#select_list_of_files").change(function () {
+        if ($(this).val() == 0) {
+            $('li').removeClass("year-hide");
+            $('.accordion-menu').find('ul').show();
+        } else {
+            $('.all_years').addClass("year-hide");
+            $('.year-' + $(this).val()).removeClass("year-hide");
+            $('.accordion-menu').each(function () {
+                if (($(this).find('ul').find('li').length - $(this).find('ul').find('li.year-hide').length) == 0) {
+                    $(this).find('ul').hide();
+                } else {
+                    $(this).find('ul').show();
+                }
+            });
+        }
+    });
+    
+    $("#datepicker, .datepicker").datepicker($.datepicker.regional["ru"]);
+    
     $("#main-factors").tableHeadFixer({"head" : true, "left" : 1}); 
+    
+    $("#fixTable, #fixTable2").tableHeadFixer({
+        "head": true,
+        "left": 1
+    });
+
+    $(".square-minus").on("click", function () {
+        $id = $(this).attr('id');
+        if ($("#hide-" + $id).css('display') != 'none') {
+            $(this).find('.minus:first').removeClass('minus').addClass('plus');
+            $("li#hide-" + $id).each(function () {
+                $(this).slideToggle();
+            });
+            /*if ($("#hide-sub-" + $id).css('display') != 'none')
+          		{
+          			$("#hide-sub-" + $id).prev('li').find('.minus:first').removeClass('minus').addClass('plus');
+          			$("li#hide-sub-" + $id).each(function() {
+            				$( this ).slideToggle(); 
+          			});
+          		}*/
+            $id = $("li#hide-" + $id).find(".square-minus").attr("id");
+            while ($id) {
+                if ($("#hide-" + $id).css('display') != 'none') {
+                    $("#hide-" + $id).prev('li').find('.minus:first').removeClass('minus').addClass('plus');
+                    $("li#hide-" + $id).each(function () {
+                        $(this).slideToggle();
+                    });
+                }
+                $id = $("li#hide-" + $id).find(".square-minus").attr("id");
+            }
+
+        } else {
+            $(this).find('.plus:first').removeClass('plus').addClass('minus');
+            $("li#hide-" + $id).each(function () {
+                $(this).slideToggle();
+            });
+            if ($("#hide-sub-" + $id).css('display') != 'none') {
+                $("#hide-sub-" + $id).prev('li').find('.minus:first').removeClass('minus').addClass('plus');
+                $("li#hide-sub-" + $id).each(function () {
+                    $(this).slideToggle();
+                });
+            }
+        }
+    });
 
     $('.spoiler').click(function () {
         var $parent = $(this).parent("td").parent(".first");
