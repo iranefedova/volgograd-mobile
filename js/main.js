@@ -87,4 +87,25 @@ $(function () {
         });
     });
 
+    function displayContentAccordion(accordion) { //для ситуации "аккордеоны внутри аккордеона"
+        var hideBlocks = accordion.find('[data-accordion-content]');
+        var curHideEl;
+        $.each(hideBlocks, function () {
+            if(accordion.is($(this).parent()[0])) {
+                curHideEl = $(this);
+            }
+        });
+        accordion.hasClass('open') ? curHideEl.slideDown(250): curHideEl.slideUp(250);
+    }
+
+    function displayAccordion() {
+        $('body').on('click', '[data-accordion-link]', function (e) {
+            e.preventDefault();
+            var  currentAccordion = $(this).closest('[data-accordion]');
+            currentAccordion.toggleClass('open');
+            displayContentAccordion(currentAccordion);
+        });
+    }
+
+    displayAccordion();
 });
