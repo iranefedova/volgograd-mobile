@@ -896,6 +896,10 @@ ul.second-menu > li:nth-child(2n) {
     background-color: #037cd3;
 }
 
+.circle-list.greys li:before {
+    background-color: #DADFE6;
+}
+
 .circle-list.green li:before {
     background-color: #77b43d;
 }
