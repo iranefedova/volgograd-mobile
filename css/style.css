@@ -671,11 +671,6 @@ ul.second-menu > li:nth-child(2n) {
     max-height: 20px;
 }
 
-.news-item .img-link img {
-    width: 100%;
-    height: auto;
-}
-
 .news-item {
     margin-bottom: 15px;
 }
@@ -696,8 +691,13 @@ ul.second-menu > li:nth-child(2n) {
 }
 
 .news-item .img-link {
-    margin-bottom: 20px;
     display: block;
+}
+
+.news-item .img-link img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .useful-link {
