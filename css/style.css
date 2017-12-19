@@ -985,9 +985,15 @@ ul.second-menu > li:nth-child(2n) {
     cursor: pointer;
 }
 
+.document-block {
+    font-size: 0;
+}
+
+
 .document-block > .doc-icon {
     display: inline-block;
     vertical-align: top;
+    width: 60px;
 }
 
 .document-block > .doc-icon > img {
@@ -997,11 +1003,21 @@ ul.second-menu > li:nth-child(2n) {
 .document-block > .doc-description {
     display: inline-block;
     vertical-align: top;
+    width: calc(100% - 60px);
 }
 
 .document-block > .doc-description > p {
     font-size: 14px;
     margin-top: 4px;
+}
+
+.document-block > .doc-description > a {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    display: inline-block;
 }
 
 .download-btn {
