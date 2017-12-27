@@ -277,15 +277,6 @@
             <h2 class="marg-t">Объем финансирования на период реализации проекта на 01.07.2017</h2>
             <h4 class="grey-text">Данные на 01.07.2017</h4>
             <div class="row item">
-                <div class="switch small-marg-l">
-                    <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
-                    <label for="toggle-on1" class="switch__btn">Динамика</label>
-                    <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
-                    <label for="toggle-off1" class="switch__btn">Таблица</label>
-                </div>
-                <a class="download-btn" style="float: right" href="#"></a>
-            </div>
-            <div class="row item marg-t">
                 <form id="form_date_social-proj1" name="form_date_social-proj1" action="http://lod.oep-penza.ru/socio-economic-development/social-projects/" method="post" class="inline clearfix">
                     <input id="date_social-proj1" name="date_social-proj1" type="text" class="dateform datepick-comp is-datepick" value="01.06.2017" data-parent="social-proj1" data-after="first_elem"><img src="../images/datepicker.png" alt="Popup" class="dateform_img datepick-trigger">
                     <div class="dateform_img_display">
@@ -293,8 +284,15 @@
                     </div>
                     <input type="submit" style="display:none;">
                 </form>
+                <a class="download-btn" style="float: right" href="#"></a>
+                <div class="switch inline marg-r" style="float: right">
+                    <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
+                    <label for="toggle-on1" class="switch__btn">Динамика</label>
+                    <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
+                    <label for="toggle-off1" class="switch__btn">Таблица</label>
+                </div>
             </div>
-            <div class="item marg-t">
+            <div class="row item marg-t">
                 <select>
                      <option value="">Источник финансирования</option>
                  </select>
