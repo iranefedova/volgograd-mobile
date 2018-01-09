@@ -160,7 +160,7 @@ h6 {
 
 
 .burger div, .burger:before, .burger:after{
-    background: #fff;
+    background: #ffffff;
     width: 100%;
     height: 7px;
     content: '';
@@ -213,7 +213,7 @@ h6 {
 .main-menu{
     position: fixed;
     width: 360px;
-    background: #273848;
+    background-color: #273848;
     overflow: auto;
     height: 100%;
     display: none;
@@ -268,7 +268,10 @@ ul.root-item{
 .search-form input{
     width: 100%;
     height: 86px;
-    background: #f8f8f8 url("../images/ico-search.png") no-repeat 40px center;
+    background-color: #f8f8f8;
+    background-image: url("../images/ico-search.png");
+    background-repeat: no-repeat;
+    background-position: 40px center;
     padding: 0 30px 0 80px;
     font-size: 26px;
     font-family: 'proxima', sans-serif;
@@ -398,7 +401,7 @@ ul.second-menu > li:nth-child(2n) {
 
 
 .jq-selectbox__select{
-    background: #fff !important;
+    background-color: #ffffff !important;
     border-radius: 0;
     box-shadow: none;
     height: 60px;
@@ -419,7 +422,7 @@ ul.second-menu > li:nth-child(2n) {
 .jq-selectbox__trigger{
     border: 0;
     width: 60px;
-    background: #f6bd68;
+    background-color: #f6bd68;
 }
 
 .sub-filters .jq-selectbox__select-text {
@@ -435,7 +438,7 @@ ul.second-menu > li:nth-child(2n) {
     top: 50%;
     left: 50%;
     margin: -3px  0 0 -5px;
-    border-top-color: #fff;
+    border-top-color: #ffffff;
 }
 
 .jq-selectbox__dropdown{
@@ -1125,8 +1128,8 @@ ul.alfavit > li > a {
 }
 
 ul.alfavit > li > a.active {
-    background: #f6bd68;
-    color: #fff;
+    background-color: #f6bd68;
+    color: #ffffff;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 6px;
@@ -1154,7 +1157,7 @@ ul.alfavit > li > a.active {
 }
 
 .pagination li {
-    background-color: white;
+    background-color: #ffffff;
     display: inline-block;
 }
 
@@ -1248,7 +1251,7 @@ ul.alfavit > li > a.active {
 
 .switch input[type="radio"].toggle+label:after,
 .switch input[type="radio"].check+label:after {
-    background: #f6bd68;
+    background-color: #f6bd68;
     content: "";
     border-radius: 5px;
     height: 100%;
@@ -1278,7 +1281,7 @@ ul.alfavit > li > a.active {
 
 .switch input[type="radio"].toggle:checked+label {
     cursor: default;
-    color: #fff;
+    color: #ffffff;
     /*-webkit-transition: color 200ms;
   transition: color 200ms;*/
     z-index: 1;
@@ -1315,7 +1318,7 @@ ul.alfavit > li > a.active {
     width: 60px;
     height: 60px;
     padding: 8px;
-    background: #f6bd68;
+    background-color: #f6bd68;
     box-sizing: border-box;
     margin-right: 10px;
 }
@@ -1419,7 +1422,7 @@ ul.alfavit > li > a.active {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #fff;
+    background-color: #ffffff;
     display: block;
 }
 
@@ -1464,7 +1467,7 @@ ul.alfavit > li > a.active {
 }
 
 .minus {
-    background: #fff;
+    background-color: #ffffff;
     height: 5px;
     width: 25px;
     position: relative;
@@ -1473,7 +1476,7 @@ ul.alfavit > li > a.active {
 }
 
 .plus {
-    background: #fff;
+    background-color: #ffffff;
     height: 25px;
     width: 5px;
     position: relative;
@@ -1485,7 +1488,7 @@ ul.alfavit > li > a.active {
     content: "";
     height: 5px;
     width: 25px;
-    background: #fff;
+    background-color: #ffffff;
     position: absolute;
     left: -10px;
     top: 10px;
@@ -1552,23 +1555,23 @@ ul.alfavit > li > a.active {
 
 .graph-item.active {
     border: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .graph-item.active.blue {
-    background: #037cd3;
+    background-color: #037cd3;
 }
 
 .graph-item.active.green {
-    background: #8fc63d;
+    background-color: #8fc63d;
 }
 
 .graph-item.active.lime-green {
-    background: #c7df9c;
+    background-color: #c7df9c;
 }
 
 .graph-item.active.orange {
-    background: #fdc68c;
+    background-color: #fdc68c;
 }
 
 .border-bottom {
@@ -1592,7 +1595,9 @@ ul.alfavit > li > a.active {
     width: 220px;
     height: 50px;
     border: 2px solid #dadfe6;
-    background: url("../images/ico-date.jpg") no-repeat right top;
+    background-image: url("../images/ico-date.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
     padding: 0 53px 0 15px;
     font-weight: 300;
     font-size: 20px;
@@ -1647,8 +1652,8 @@ ul.alfavit > li > a.active {
 }
 
 .tabs a.active {
-    color: #fff;
-    background: #f6bd68;
+    color: #ffffff;
+    background-color: #f6bd68;
 }
 
 .tabs2 {
@@ -1750,7 +1755,7 @@ ul.alfavit > li > a.active {
 }
 
 .meter-wrap {
-    background: #cccccc;
+    background-color: #cccccc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 25px;
@@ -1814,7 +1819,7 @@ ul.alfavit > li > a.active {
 .button-meter {
     width: 95%;
     margin: 20px auto;
-    background: #cccccc;
+    background-color: #cccccc;
     color: #555555;
     font-size: 20px;
     height: 55px;
@@ -1825,10 +1830,10 @@ ul.alfavit > li > a.active {
 
 .circle-btn {
     display: inline-block;
-    background: #ccc;
+    background-color: #ccc;
     height: 12px;
     width: 12px;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     margin-right: 5px;
 }
@@ -1847,7 +1852,7 @@ ul.alfavit > li > a.active {
     min-width: 12%!important;
     max-width: 95%;
     padding: 10px;
-    color: #fff;
+    color: #ffffff;
     background-color: #206db1;
     border-radius: 20px;
     text-align: left;
@@ -1901,7 +1906,7 @@ ul.alfavit > li > a.active {
 
 .carousel-item a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -1915,14 +1920,14 @@ ul.alfavit > li > a.active {
     font-size: 12px;
     color: #000;
     text-decoration: none;
-    background: #fff;
+    background-color: #ffffff;
     width: 550px;
 }
 
 .ui-widget-content div:hover,
 .ui-widget-content a:hover {
-    background: #5b6774;
-    color: #FFF;
+    background-color: #5b6774;
+    color: #ffffff;
 }
 
 .budget__list {
