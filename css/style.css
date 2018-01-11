@@ -405,7 +405,9 @@ ul.second-menu > li:nth-child(2n) {
     border-radius: 0;
     box-shadow: none;
     height: 60px;
-    border: 2px solid #dadfe6;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadfe6;
     padding-left: 10px;
     padding-right: 60px;
     margin-bottom: 10px;
@@ -1089,7 +1091,9 @@ ul.second-menu > li:nth-child(2n) {
 }
 
 .schedule-button {
-    border: #c5c8cc 1px solid;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c5c8cc;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 6px;
@@ -1163,7 +1167,9 @@ ul.alfavit > li > a.active {
 
 .pagination a {
     text-decoration:none;
-    border: 1px solid #dadfe6;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dadfe6;
     padding: 10px;
     min-width:28px;
     min-height:34px;
@@ -1211,7 +1217,9 @@ ul.alfavit > li > a.active {
     display: inline-block;
     overflow: hidden;
     color: #7f7f7f;
-    border: 2px solid #dadfe6;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadfe6;
     border-radius: 10px;
     white-space: nowrap;
     width: 246px;
@@ -1312,9 +1320,10 @@ ul.alfavit > li > a.active {
     float: left;
     opacity: 1;
     cursor: pointer;
-    border-top: 2px solid #dadfe6;
-    border-bottom: 2px solid #dadfe6;
-    border-right: 2px solid #dadfe6;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadfe6;
+    border-left: 0;
     width: 60px;
     height: 60px;
     padding: 8px;
@@ -1356,7 +1365,7 @@ ul.alfavit > li > a.active {
 
 .b-contact__group a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
 }
 
 .b-contact__group a.b-contact__link {
@@ -1366,9 +1375,11 @@ ul.alfavit > li > a.active {
 
 .b-accordeon__link {
     display: block;
-    border: 1px solid #b4b4b4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b4b4b4;
     text-decoration: none;
-    color: #000;
+    color: #000000;
     padding: 25px 45px 25px 15px;
     position: relative;
     font-size: 19px;
@@ -1386,8 +1397,11 @@ ul.alfavit > li > a.active {
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
-    border-right: 3px solid #aab2c2;
-    border-bottom: 3px solid #aab2c2;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #aab2c2;
+    border-left: 0;
+    border-top: 0;
 }
 
 .b-accordeon__content {
@@ -1446,7 +1460,9 @@ ul.alfavit > li > a.active {
 
 .label-accordion {
     padding: 20px 10px;
-    border: 1px solid #b4b4b4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b4b4b4;
     display: block;
     cursor: pointer;
 }
@@ -1546,7 +1562,9 @@ ul.alfavit > li > a.active {
 .graph-item {
     min-width: 23%;
     padding: 10px 15px;
-    border: 1px solid #b7b8b7;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b7b8b7;
     margin-left: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -1594,7 +1612,9 @@ ul.alfavit > li > a.active {
 .filters .date input {
     width: 220px;
     height: 50px;
-    border: 2px solid #dadfe6;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadfe6;
     background-image: url("../images/ico-date.jpg");
     background-repeat: no-repeat;
     background-position: right top;
@@ -1612,7 +1632,9 @@ ul.alfavit > li > a.active {
 .tabs label {
     margin-right: 10px;
     padding: 6px 10px 6px 10px;
-    border: 2px solid #dadfe6;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadfe6;
     transition: background 200ms ease, color 200ms ease;
 }
 
@@ -1633,7 +1655,9 @@ ul.alfavit > li > a.active {
 .tabs {
     overflow: hidden;
     border-radius: 10px;
-    border: 2px solid #dadfe6;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dadfe6;
     height: 51px;
     width: 246px;
 }
@@ -1681,7 +1705,9 @@ ul.alfavit > li > a.active {
 
 .line {
     margin: 20px -20px;
-    border-bottom: 1px solid #f4f5f6;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #f4f5f6;
 }
 
 .page__subtitle {
@@ -1724,12 +1750,16 @@ ul.alfavit > li > a.active {
 }
 
 .infograph-wrap {
-    border-bottom: 1px solid #b7b8b7;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #b7b8b7;
     padding-bottom: 20px;
 }
 
 .infograph-item {
-    border-top: 1px solid #b7b8b7;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #b7b8b7;
 }
 
 .infograph-item .icon {
@@ -1797,7 +1827,7 @@ ul.alfavit > li > a.active {
 }
 
 .meter-inside {
-    color: #ccc;
+    color: #cccccc;
     padding: 8px 8px;
     display: inline-block;
     font-size: 18px;
@@ -1830,10 +1860,12 @@ ul.alfavit > li > a.active {
 
 .circle-btn {
     display: inline-block;
-    background-color: #ccc;
+    background-color: #cccccc;
     height: 12px;
     width: 12px;
-    border: 3px solid #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ffffff;
     border-radius: 50%;
     margin-right: 5px;
 }
@@ -1914,11 +1946,12 @@ ul.alfavit > li > a.active {
 .ui-widget-content a {
     display: block;
     padding: 10px 15px;
-    border-bottom: solid 1px #dadfe6;
-    border-left: solid 1px #dadfe6;
-    border-right: solid 1px #dadfe6;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dadfe6;
+    border-top: 0;
     font-size: 12px;
-    color: #000;
+    color: #000000;
     text-decoration: none;
     background-color: #ffffff;
     width: 550px;
@@ -1957,4 +1990,8 @@ ul.alfavit > li > a.active {
     display: block;
     width: 100%;
     text-align: center;
+}
+
+.diagram_box {
+    width: 100%;
 }

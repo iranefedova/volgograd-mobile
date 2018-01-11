@@ -1,0 +1,223 @@
+.b-forum {
+    padding: 20px 5px;
+}
+
+.b-forum__title {
+    padding: 8px 5px 13px;
+}
+
+.b-forum__title a {
+    font-size: 9px;
+    color: #3ca6f1;
+    text-decoration: none;
+}
+
+.b-forum__item,
+.b-forum__item-title {
+    font-size: 0;
+}
+
+.b-forum__item {
+    border-right-width: 1px; 
+    border-right-style: solid;
+    border-right-color: #cfd5de;
+    border-left-width: 1px; 
+    border-left-style: solid;
+    border-left-color: #cfd5de;
+}
+
+.b-forum__item-title {
+    background-color: #037cd3;
+}
+
+.b-forum__name,
+.b-forum__theme,
+.b-forum__message,
+.b-forum__update {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: 8px;
+    line-height: 21px;
+    height: 23px;
+    color: #36393d;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cfd5de;
+    border-left: none;
+}
+
+.b-forum__theme,
+.b-forum__message,
+.b-forum__update {
+    text-align: center;
+    padding: 0 7px;
+}
+
+.b-forum__item-title .b-forum__name,
+.b-forum__item-title .b-forum__theme,
+.b-forum__item-title .b-forum__message,
+.b-forum__item-title .b-forum__update {
+    color: #ffffff;
+    font-size: 8px;
+    line-height: 11px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #479fdf;
+    border-bottom: none;
+    border-top: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    height: auto;
+}
+
+.b-forum__item-title .b-forum__name {
+    background-image: none;
+}
+
+.b-forum__item-title .b-forum__update {
+    border-right: none;
+}
+
+.b-forum__item-title .b-forum__name a {
+    color: #ffffff;
+    font-size: 8px;
+    line-height: 11px;
+    text-decoration: underline;
+}
+
+.b-forum__name {
+    width: 42%;
+    padding-left: 27px;
+    padding-right: 7px;
+    background-image: url(../images/letter.png);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+}
+
+.b-forum__name.active {
+    background-image: url(../images/letter-active.png);
+}
+
+.b-forum__name a {
+    color: #36393d;
+    text-decoration: none;
+}
+
+.b-forum__theme {
+    width: 16%;
+}
+
+.b-forum__message {
+    width: 20%;
+}
+
+.b-forum__update {
+    width: 22%;
+    border-right: none;
+    line-height: 10px;
+}
+
+.b-forum__date {
+    font-size: 6px;
+    line-height: 6px;
+    color: #909295;
+    text-align: left;
+}
+
+.b-forum__link {
+    display: inline-block;
+    color: #3ca6f1;
+    font-size: 8px;
+}
+
+.b-forum__name a,
+.b-forum__link,
+.b-forum__theme,
+.b-forum__message {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.b-forum__group {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #88b9f6;
+    padding: 7px 5px;
+    font-size: 7px;
+    line-height: 7px;
+    color: #404141;
+    margin-top: 5px;
+}
+
+.b-forum__new-message {
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(../images/letter.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 27px;
+    font-size: 7px;
+    line-height: 7px;
+    color: #404141;
+    margin-right: 40px;
+}
+
+.b-forum__new-message.active {
+    background-image: url(../images/letter-active.png);
+}
+
+.b-forum__new-message:last-child {
+    margin-right: 0;
+}
+
+
+.b-forum-top {
+    padding: 5px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d4dae3;
+    position: relative;
+}
+
+.b-forum-top__list {
+    font-size: 0;
+}
+
+.b-forum-top__item {
+    display: inline-block;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #d4dae3;
+}
+
+.b-forum-top__item a {
+    color: #061425;
+    font-size: 8px;
+    line-height: 11px;
+    padding: 0 10px;
+}
+
+.b-forum-top__item:first-child a {
+    padding-left: 0;
+}
+
+.b-forum-top__item:last-child {
+    border-right: none;
+}
+
+.b-forum-top__subscribe {
+    padding-left: 17px;
+    background-image: url("../images/rss.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 8px;
+    line-height: 15px;
+    float: right;
+    color: #061425;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
