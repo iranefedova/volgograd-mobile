@@ -86,6 +86,8 @@ $(function () {
         $(this).closest('ul').find('ul:first').slideToggle();
     });
 
+    $('.js-no-styler').styler('destroy');
+
     $("#select_list_of_files").change(function () {
         if ($(this).val() == 0) {
             $('li').removeClass("year-hide");
