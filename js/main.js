@@ -1,5 +1,24 @@
 $(function () {
 
+    //попап авторизации на форуме
+    function displayForumAuth() {
+        $('.js-forum-auth').on('click', function () {
+            $('.b-forum-auth').toggleClass('active');
+            return false;
+        });
+
+        $('.js-forum-auth-close').on('click', function () {
+            $('.b-forum-auth').removeClass('active');
+        });
+
+        $(document).on('click', function (event) {
+            if ($(event.target).closest(".js-forum-auth, .b-forum-auth").length) return;
+            $('.b-forum-auth').removeClass('active');
+            event.stopPropagation();
+        });
+    };
+    displayForumAuth();
+
     $('.burger').on('click', function () {
         $(this).toggleClass('open');
         $(this).next().slideToggle(300);

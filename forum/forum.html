@@ -270,7 +270,7 @@
         </div>
 
         <h1>Форум</h1>
-        <div class="white-block b-forum">
+        <div class="white-block b-forum marg-t">
             <div class="b-forum-top">
                 <ul class="b-forum-top__list">
                     <li class="b-forum-top__item">
@@ -283,7 +283,33 @@
                         <a href="javascript:void(0)">Правила</a>
                     </li>
                     <li class="b-forum-top__item">
-                        <a href="javascript:void(0)">Войти</a>
+                        <a class="js-forum-auth" href="javascript:void(0)">Войти</a>
+                        <div class="b-forum-auth">
+                            <div class="b-forum-auth__close">
+                                <a class="js-forum-auth-close" href="javascript:void(0)">Закрыть</a>
+                            </div>
+                            <form action="/" class="b-forum-auth__form">
+                                <div class="b-forum-auth__group">
+                                    <label for="b-forum-auth-name">Логин:</label>
+                                    <input class="b-forum-auth__input" type="text" id="forum-auth-name" />
+                                </div>
+                                <div class="b-forum-auth__group">
+                                    <label for="forum-auth-password">Пароль:</label>
+                                    <input class="b-forum-auth__input" type="password" id="forum-auth-password" />
+                                </div>
+                                <div class="b-forum-auth__group">
+                                    <input type="checkbox" id="forum-auth-checkbox" />
+                                    <label for="forum-auth-checkbox">Запомнить меня на этом компьютере</label>
+                                </div>
+                                <button class="b-forum-auth__button">Войти</button>
+                            </form>
+                            <div class="b-forum-auth__link">
+                                <a href="javascript:void(0)">Забыли свой пароль?</a>
+                            </div>
+                            <div class="b-forum-auth__link">
+                                <a href="javascript:void(0)">Регистрация</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <a href="javascript:void(0)" class="b-forum-top__subscribe">Подписаться на обновления</a>
@@ -394,9 +420,6 @@
 
 </div>
  <script src="js/tableHeadFixer.js"></script>
- <script>
-    $("#table").tableHeadFixer({"head" : true, "left" : 1}); 
-</script>
 </body>
 
 </html>
