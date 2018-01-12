@@ -631,6 +631,11 @@ ul.second-menu > li:nth-child(2n) {
     width: 100%;
 }
 
+.b-public-owl {
+    font-size: 0;
+    margin: 0 -5px;
+}
+
 .news {
     margin-bottom: 20px;
 }
@@ -678,6 +683,34 @@ ul.second-menu > li:nth-child(2n) {
 
 .news-item {
     margin-bottom: 15px;
+}
+
+.news-item.news-item--public-owl {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.news-item.news-item--public-owl .header-link {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.news-item.news-item--public-owl .img-link {
+    height: 190px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.news-item.news-item p {
+    font-size: 14px;
+    line-height: 14px;
 }
 
 .news-item p {
@@ -1994,4 +2027,87 @@ ul.alfavit > li > a.active {
 
 .diagram_box {
     width: 100%;
+}
+
+.b-tabs__list {
+    font-size: 0;
+    margin: 0 -3px;
+}
+
+.b-tabs__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 3px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.b-tabs__item a {
+    text-decoration: none;
+    color: #1b1818;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b7b8b7;
+    padding: 10px 27px;
+    display: block;
+}
+
+.b-tabs__item.active a {
+    background-color: #037cd3;
+    color: #ffffff;
+}
+
+.b-tabs__panel {
+    display: none;
+}
+
+.b-tabs__panel.active {
+    display: block;
+}
+
+.b-council__image,
+.b-council__description {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.b-council__item {
+    margin-bottom: 30px;
+}
+
+.b-council__image {
+    width: 120px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #206db1;
+    box-sizing: border-box;
+}
+
+.b-council__image img {
+    width: 100%;
+    height: auto;
+}
+
+.b-council__description {
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.b-council__title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+
+.b-council__name {
+    margin-bottom: 4px;
+}
+
+.b-council__text,
+.b-council__name {
+    font-size: 14px;
+    line-height: 16px;
 }
