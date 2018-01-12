@@ -19,6 +19,19 @@ $(function () {
     };
     displayForumAuth();
 
+    //табы
+    function displayTabs() {
+        $('body').on('click', '[data-tabs-link]', function (e) {
+            e.preventDefault();
+            var $link = $(this);
+            $link.addClass('active').siblings().removeClass('active');
+
+            var $content = $link.closest('[data-tabs]').find('[data-tabs-item]');
+            $content.eq($link.index()).addClass('active').siblings().removeClass('active');        
+        });
+    };
+    displayTabs();
+
     $('.burger').on('click', function () {
         $(this).toggleClass('open');
         $(this).next().slideToggle(300);
