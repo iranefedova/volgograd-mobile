@@ -124,6 +124,7 @@
 .b-forum__theme a {
     color: #3ca6f1;
     text-decoration: none;
+    display: inline-block;
 }
 
 .b-forum__message {
@@ -134,6 +135,7 @@
     width: 22%;
     border-right: none;
     line-height: 10px;
+    text-align: left;
 }
 
 .b-forum__date {
@@ -307,7 +309,20 @@
     border-style: solid;
     border-color: #406390;
     color: #ffffff;
-    padding: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.b-forum-title a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.b-forum-title__link {
+    color: #ffffff;
+    float: right;
+    text-decoration: none;
 }
 
 .b-forum-rule__content {
@@ -444,4 +459,179 @@
 
 .b-forum-search__list + .b-forum-pagination {
     border-top: none;
+}
+
+.b-forum-pagination__link {
+    float: right;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3ca6f1;
+    text-decoration: none;
+}
+
+.b-forum-message {
+    font-size: 0;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    background-color: #dae1e9;
+    position: relative;
+    padding-left: 150px;
+}
+
+.b-forum-message:before {
+    content:"";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-top-color: #d5dae0;
+    left: 0;
+    bottom: 34px;
+    z-index: 1;
+}
+
+.b-forum-message__name {
+    width: 150px;
+    background-color: #f1f6fa;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #d5dae0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #d5dae0;
+    padding-top: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% - 15px);
+}
+
+.b-forum-message__description {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d5dae0;
+    border-top: none;
+}
+
+.b-forum-message__text {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.b-forum-message__panel {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 3px 5px;
+    text-align: right;
+}
+
+.b-forum-message__panel a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: #3ca6f1;
+}
+
+.b-forum-message__panel a:last-child {
+    margin-right: 0;
+}
+
+
+.b-forum-message__panel a {
+}
+
+.b-forum-message__date {
+    text-align: center;
+    font-size: 10px;
+    line-height: 14px;
+    background-color: #e5eaf0;
+    padding: 3px 0;
+    border-bottom-color: #d6dde5;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    position: relative;
+}
+
+.b-forum-message__group {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}
+
+.b-forum-message__group a {
+    text-decoration: none;
+    color: #3ca6f1;
+}
+
+.b-forum-message__like {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 13px;
+    background-image: url('../images/like.svg');
+    background-repeat: no-repeat;
+    background-position: left 0;
+    color: #929292;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.b-forum-answer {
+    margin-top: 15px;
+}
+
+.b-forum-answer__group {
+    margin-bottom: 10px;
+}
+
+.b-forum-answer__group label {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.b-forum-answer__group input {
+    width: 250px;
+    display: block;
+}
+
+.b-forum-answer__group label span {
+    color: #ff0000;
+}
+
+.b-forum-answer__group select {
+    display: inline-block;
+    width: 250px;
+}
+
+.b-forum-answer__group--border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dae0e7;
+    padding: 7px 5px;
+    margin-top: 5px;
+    text-align: right;
+    background-color: #fbfcfd;
+}
+
+.b-forum-answer__panel {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dae0e7;
+    border-top: none;
+    background-color: #fbfcfd;
+    padding: 5px;
+}
+
+.b-forum-answer__panel a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #3ca6f1;
 }

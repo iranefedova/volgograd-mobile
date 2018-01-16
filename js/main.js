@@ -19,6 +19,15 @@ $(function () {
     };
     displayForumAuth();
 
+    //появления инпута для тегов
+    function displayInputTag() {
+        $('.js-tag-add').on('click', function () {
+            $('.js-tag-input').show();
+            $('.js-tag-add').hide();
+        });
+    };
+    displayInputTag();
+
     //табы
     function displayTabs() {
         $('body').on('click', '[data-tabs-link]', function (e) {
